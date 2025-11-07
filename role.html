@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Role - EduApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Choose Your Role</h1>
+    <p class="subtitle">Select your role to continue</p>
+
+    <div class="card-container">
+      <div class="card role-card" onclick="selectRole('student')">
+        <h2>Student</h2>
+        <p>Access study materials and learning resources</p>
+      </div>
+
+      <div class="card role-card" onclick="selectRole('lecturer')">
+        <h2>Lecturer</h2>
+        <p>Upload and manage learning materials and videos</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

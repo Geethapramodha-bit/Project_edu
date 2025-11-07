@@ -1,0 +1,124 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff, #dbeafe);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------- TITLES ---------- */
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #475569;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+/* ---------- CARDS ---------- */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- BUTTONS ---------- */
+.primary-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.03);
+}
+
+.large-btn {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.secondary-btn {
+  margin-top: 30px;
+  background-color: #475569;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #334155;
+}
+
+/* ---------- FORMS ---------- */
+.login-card {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.login-card input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* ---------- ROLE CARDS ---------- */
+.role-card {
+  cursor: pointer;
+}
+
+.role-card:hover {
+  background-color: #f1f5ff;
+  border: 1px solid #2563eb;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
